@@ -1,0 +1,9 @@
+java org.kastiks.core.Core --merge --source-path  /home/m/dev/FTR/test/merge-test/source-dir0/repo_0 --destination-path /home/m/dev/FTR/test/merge-test/dest0
+
+java org.kastiks.core.Core --prune --master-path  /media/m/P-BOOT/repo_0 --slave-path /media/m/P-BOOT/slave/repo_0
+
+java org.kastiks.core.Core --prune --master-path  /media/m/WD-3To-N1/filesrep --slave-path /media/m/WD-3To-N2/filesrep
+
+java org.kastiks.core.Core --merge --source-path  /media/m/WD-3To-N1/filesrep --destination-path /media/m/WD-3To-N2
+
+java -cp .:./bin/ org.kastiks.core.Core --art

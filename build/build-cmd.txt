@@ -1,0 +1,1 @@
+jar --main-class=org.kastiks.core.Core -c -v -f run-FTR_v.jar **

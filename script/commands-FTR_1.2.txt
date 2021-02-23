@@ -1,0 +1,13 @@
+*** Merging two repositories (folders): 
+Both source and destination "repository-folders" have to have the same name. We are merging two folders, thus they have the same name, otherwise it is just a full copy:
+
+java -jar build/run-FTR_1.2.jar --art --merge --source-path  /your/source/path/repository-folder --destination-path /your/destination/path/repository-folder
+
+you can add "--exclude Thumbs.db" option on Windows, to filter Thumbs.db hidden files, which can cause issues when copying.
+
+!WARNING: Do not use the "prune" command if you are not 100% sure you undersand how it works. If you invert "master" and "slave" repositories you will delete the newest files of your "master" file base! For more details please refer to the README.txt documentation.
+
+Pruning the "slave" repository means removing the excess compared to the "master" repository. The "master" is the equivalent of the source-path in "merge" terminology, and "slave" equivalent of destination-path. 
+Both master and slave "repository-folders" have to have the same name:
+
+java -jar build/run-FTR_1.2.jar --art --prune --master-path  /your/master/repository-folder --slave-path /your/slave/repository-folder
