@@ -56,7 +56,7 @@ Runtime & compilation:
 -Operating system: any OS supporting Java 1.4 or higher e.g. Linux, Solaris, Windows XP/2000/Server 2003/Vista/7/10 ...
 
 
-# User Guide
+## User Guide
 
 ####  Help command
 
@@ -73,7 +73,7 @@ java -jar build/run-FTR_1.2.jar --version
 Please refer to the file commands-FTR_x.y.txt in "script" folder.
 
 
-# Trouble shooting
+## Troubleshooting
 
 ####  Class loading issues during command launch:
 Make sure you are using the correct Java version as specified in System requirements paragraph.
